@@ -262,25 +262,25 @@ void PowerLostCreateData(){
     DynamicJsonDocument doc(2048);
     char datadat[1024];
     
-    doc["Inv1_Date"] = inv_date.c_str();
-    doc["Inv1_Time"] = inv_time.c_str();
-    doc["Inv1_SN"] = inv_sn.c_str();
-    doc["Inv1_V_DC1"] = vdc1;
-    doc["Inv1_I_DC1"] = idc1;
-    doc["Inv1_P_DC1"] = pdc1;
-    doc["Inv1_V_DC2"] = vdc2;
-    doc["Inv1_I_DC2"] = idc2;
-    doc["Inv1_P_DC2"] = pdc2;
-    doc["Inv1_V_ACU"] = vacu;
-    doc["Inv1_I_ACU"] = iacu;
-    doc["Inv1_V_ACV"] = vacv;
-    doc["Inv1_I_ACV"] = iacv;
-    doc["Inv1_V_ACW"] = vacw;
-    doc["Inv1_I_ACW"] = iacw;
-    doc["Inv1_P_AC_Out"] = vaactotal;
-    doc["Inv1_P_AC_Total"] = pactotal;
-    doc["Inv1_P_Fact_AC"] = pfac;
-    doc["Inv1_T_Inv"] = tinv;
+    doc["inverter01_Date"] = inv_date.c_str();
+    doc["inverter01_Time"] = inv_time.c_str();
+    doc["inverter01_SN"] = inv_sn.c_str();
+    doc["inverter01_V_DC1"] = vdc1;
+    doc["inverter01_I_DC1"] = idc1;
+    doc["inverter01_P_DC1"] = pdc1;
+    doc["inverter01_V_DC2"] = vdc2;
+    doc["inverter01_I_DC2"] = idc2;
+    doc["inverter01_P_DC2"] = pdc2;
+    doc["inverter01_V_ACU"] = vacu;
+    doc["inverter01_I_ACU"] = iacu;
+    doc["inverter01_V_ACV"] = vacv;
+    doc["inverter01_I_ACV"] = iacv;
+    doc["inverter01_V_ACW"] = vacw;
+    doc["inverter01_I_ACW"] = iacw;
+    doc["inverter01_P_AC_Out"] = vaactotal;
+    doc["inverter01_P_AC_Total"] = pactotal;
+    doc["inverter01_P_Fact_AC"] = pfac;
+    doc["inverter01_T_Inv"] = tinv;
     
 
     pwrlostn = serializeJson(doc, pwrlostdatatdat);
@@ -402,7 +402,7 @@ void setup() {
   Serial.begin(9600);
 
   //TEST
-  //delay(240000);
+  delay(240000);
   while (Serial.available() !=0){
     Serial.read();
   }
