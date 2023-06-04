@@ -401,13 +401,11 @@ PubSubClient client(wifiClient);
 void setup() {
   Serial.begin(9600);
 
-  //TEST
   delay(240000);
   while (Serial.available() !=0){
     Serial.read();
   }
-  //test
-
+  
   pinMode(POWDT, INPUT);    
   configTime(SolisTZ, "de.pool.ntp.org");
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
