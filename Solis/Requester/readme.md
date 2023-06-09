@@ -1,5 +1,14 @@
 # Software and hardware for requesting register contents and send them using MQTT
 
+## latest changes:
+
+version 090623-2 : included device type 0x10 and modified the type detection to still work
+even if devicetype register is not avaiable.
+Now there is no more need to make use of the type detect folder content.
+the software now should run with every (storage-)Inverter EXCEPT RHI-1P(5-10)K-HVES-5G-US.
+
+## about
+
 Read carefully the header of the .ino file.
 
 you use this file and informations on your own risk !
