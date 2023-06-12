@@ -1,5 +1,10 @@
 # Software and hardware for requesting register contents and send them using MQTT
 
+## Important information:
+While connecting the circuit to your inverter you may get,
+depending on the capacitor within the circuit, a short alarm sequence.
+Don't be afraid, if you built the circuit correctly it will stop shortly.
+
 ## latest changes:
 
 version 090623-2 : included device type 0x10 and modified the type detection to still work
